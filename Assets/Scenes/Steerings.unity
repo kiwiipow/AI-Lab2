@@ -493,7 +493,7 @@ GameObject:
   - component: {fileID: 525125459}
   - component: {fileID: 525125460}
   m_Layer: 0
-  m_Name: Wandering
+  m_Name: A_Vision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -933,7 +933,7 @@ GameObject:
   - component: {fileID: 784799868}
   - component: {fileID: 784799867}
   m_Layer: 0
-  m_Name: Patroling
+  m_Name: A_Leader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1575,7 +1575,7 @@ GameObject:
   - component: {fileID: 947342295}
   - component: {fileID: 947342294}
   m_Layer: 0
-  m_Name: Evading
+  m_Name: A_Sound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1604,13 +1604,13 @@ MonoBehaviour:
   maxSpeed: 17
   turnAcceleration: 20
   maxTurnSpeed: 17
-  SteeringState: Evade
+  SteeringState: Wander
   fleeDistance: 30
   slowDownRadius: 5
-  wanderRadius: 0
-  WanderOffset: 0
-  wanderMaxWait: 0
-  awarenesDistance: 10
+  wanderRadius: 20
+  WanderOffset: 10
+  wanderMaxWait: 2
+  awarenesDistance: 0
   destPoint: 0
 --- !u!114 &947342295
 MonoBehaviour:
@@ -2127,7 +2127,7 @@ GameObject:
   - component: {fileID: 1550230401}
   - component: {fileID: 1550230403}
   m_Layer: 0
-  m_Name: Pursuing
+  m_Name: A_Smell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2300,13 +2300,13 @@ MonoBehaviour:
   maxSpeed: 15
   turnAcceleration: 20
   maxTurnSpeed: 15
-  SteeringState: Pursue
+  SteeringState: Wander
   fleeDistance: 30
   slowDownRadius: 5
-  wanderRadius: 0
-  WanderOffset: 0
-  wanderMaxWait: 0
-  awarenesDistance: 10
+  wanderRadius: 20
+  WanderOffset: 10
+  wanderMaxWait: 2
+  awarenesDistance: 0
   destPoint: 0
 --- !u!1 &1617063859
 GameObject:
